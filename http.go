@@ -355,7 +355,12 @@ func (c *Client) magicRequestDecoder(method, path string, body io.Reader, v inte
 
 // NewRequest returns a signed request  suitable for the chef server
 func (c *Client) NewRequest(method string, requestUrl string, body io.Reader) (*http.Request, error) {
+log.Info("ENTERED go-chef/http.go NewRequest")
+log.WithFields(log.Fields{"method": method, "requestURL": requestURL, "body": body}).Info("NewRequest ARGS")
+log.Info("CALLING url.Parse")
 	relativeUrl, err := url.Parse(requestUrl)
+log.Info("RETURN FROM url.Parse")
+log.WithFields(log.Fields{"relativeUrl": relativeUrl, "err": err}).Info("VALUES")
 	if err != nil {
 		return nil, err
 	}
@@ -367,6 +372,7 @@ func (c *Client) NewRequest(method string, requestUrl string, body io.Reader) (*
 		return nil, err
 	}
 
+log.Info("CHECK 1")
 	// parse and encode Querystring Values
 	values := req.URL.Query()
 	req.URL.RawQuery = values.Encode()
@@ -379,6 +385,7 @@ func (c *Client) NewRequest(method string, requestUrl string, body io.Reader) (*
 		req.Header.Set("Content-Type", myBody.ContentType())
 	}
 
+log.Info("CHECK 2")
 	// Calculate the body hash
 	if c.Auth.AuthenticationVersion == "1.3" {
 		req.Header.Set("X-Ops-Content-Hash", myBody.Hash256())
@@ -386,6 +393,7 @@ func (c *Client) NewRequest(method string, requestUrl string, body io.Reader) (*
 		req.Header.Set("X-Ops-Content-Hash", myBody.Hash())
 	}
 
+log.Info("CHECK 3")
 	if c.IsWebuiKey {
 		req.Header.Set("X-Ops-Request-Source", "web")
 	}
@@ -394,6 +402,7 @@ func (c *Client) NewRequest(method string, requestUrl string, body io.Reader) (*
 		return nil, err
 	}
 
+log.Info("EXITING go-chef/http.go NewRequest")
 	return req, nil
 }
 
