@@ -1,9 +1,9 @@
 #!/bin/sh
 
 # fixes build/test problems 
-if [ ! -d $GOPATH/src/github.com/go-chef/chef ];  then
+if [ ! -d $GOPATH/src/github.com/lbakerchef/chef ];  then
   mkdir -p $GOPATH/src/github.com/go-chef
-  ln -s ./ $GOPATH/src/github.com/go-chef/chef
+  ln -s ./ $GOPATH/src/github.com/lbakerchef/chef
 fi
 
 set -ex

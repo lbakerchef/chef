@@ -1,11 +1,11 @@
 //
-// Test the go-chef/chef chef server api /users/USERNAME/keys endpoints against a live chef server
+// Test the lbakerchef/chef chef server api /users/USERNAME/keys endpoints against a live chef server
 //
 package testapi
 
 import (
 	"fmt"
-	"github.com/go-chef/chef"
+	"github.com/lbakerchef/chef"
 	"os"
 	"strings"
 )

@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/go-chef/chef"
+	"github.com/lbakerchef/chef"
 )
 
 // node exercise the chef api

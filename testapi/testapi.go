@@ -1,5 +1,5 @@
 //
-// Test the go-chef/chef chef server api /organizations endpoints against a live server
+// Test the lbakerchef/chef chef server api /organizations endpoints against a live server
 //
 package testapi
 
@@ -11,7 +11,7 @@ import (
 	"os"
 	"strconv"
 
-	chef "github.com/go-chef/chef"
+	chef "github.com/lbakerchef/chef"
 )
 
 // client exercise the chef server api

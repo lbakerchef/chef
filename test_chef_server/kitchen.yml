@@ -2,7 +2,7 @@
 driver:
   name: vagrant
   synced_folders:
-    - ['../', '/go/src/github.com/go-chef/chef']
+    - ['../', '/go/src/github.com/lbakerchef/chef']
     - ['../testapi', '/go/src/testapi']
 
 provisioner:

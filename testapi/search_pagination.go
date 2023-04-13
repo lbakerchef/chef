@@ -5,7 +5,7 @@ import (
 	"os"
 	"time"
 
-	"github.com/go-chef/chef"
+	"github.com/lbakerchef/chef"
 )
 
 // search _pagination exercise the chef api

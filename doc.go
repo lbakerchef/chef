@@ -4,9 +4,9 @@ interact with the chef server.
 
 The testing can be run with go test, and the client can be used as per normal via:
 
-		go get github.com/go-chef/chef
+		go get github.com/lbakerchef/chef
 
-Documentation can be found on GoDoc at http://godoc.org/github.com/go-chef/chef
+Documentation can be found on GoDoc at http://godoc.org/github.com/lbakerchef/chef
 
 This is an example code generating a new node on a Chef Infra Server:
 
@@ -20,7 +20,7 @@ This is an example code generating a new node on a Chef Infra Server:
 			"log"
 			"os"
 
-			chef "github.com/go-chef/chef
+			chef "github.com/lbakerchef/chef
 		)
 
 		func main() {

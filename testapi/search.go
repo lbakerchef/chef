@@ -6,7 +6,7 @@ import (
 	"os"
 	"time"
 
-	"github.com/go-chef/chef"
+	"github.com/lbakerchef/chef"
 )
 
 // search exercise the chef api

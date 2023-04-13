@@ -1,5 +1,5 @@
 //
-// Test the go-chef/chef chef server api /group endpoints against a live server
+// Test the lbakerchef/chef chef server api /group endpoints against a live server
 //
 
 // TODO: add users and then add them to groups. Seems to fail. pivotal is maybe not a good test. adding fails silently
@@ -7,7 +7,7 @@ package testapi
 
 import (
 	"fmt"
-	"github.com/go-chef/chef"
+	"github.com/lbakerchef/chef"
 	"os"
 )
 

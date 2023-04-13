@@ -1,5 +1,5 @@
 //
-// Test the go-chef/chef chef authenticate_user api endpoint against a live server
+// Test the lbakerchef/chef chef authenticate_user api endpoint against a live server
 //
 package testapi
 
@@ -7,7 +7,7 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/go-chef/chef"
+	"github.com/lbakerchef/chef"
 )
 
 // authenticate exercise the chef server api

@@ -5,7 +5,7 @@ import (
 	"os"
 	"strings"
 
-	"github.com/go-chef/chef"
+	"github.com/lbakerchef/chef"
 )
 
 // container exercise the chef api

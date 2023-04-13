@@ -2,7 +2,7 @@ package testapi
 
 import (
 	"fmt"
-	"github.com/go-chef/chef"
+	"github.com/lbakerchef/chef"
 	"os"
 )
 

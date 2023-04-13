@@ -1,5 +1,5 @@
 //
-// Test the go-chef/chef chef server api /stats endpoint against a live server
+// Test the lbakerchef/chef chef server api /stats endpoint against a live server
 //
 package testapi
 

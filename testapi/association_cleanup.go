@@ -1,5 +1,5 @@
 //
-// Test the go-chef/chef chef server api /organization/:org/user and /organization/:org/association_requests
+// Test the lbakerchef/chef chef server api /organization/:org/user and /organization/:org/association_requests
 // endpoints against a live server
 //
 package testapi
@@ -8,7 +8,7 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/go-chef/chef"
+	"github.com/lbakerchef/chef"
 )
 
 // association_cleanup exercise the chef server api
