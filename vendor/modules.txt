@@ -1,0 +1,22 @@
+# github.com/ctdk/goiardi v0.11.10
+github.com/ctdk/goiardi/chefcrypto
+# github.com/davecgh/go-spew v1.1.1
+github.com/davecgh/go-spew/spew
+# github.com/hashicorp/go-cleanhttp v0.5.2
+github.com/hashicorp/go-cleanhttp
+# github.com/hashicorp/go-retryablehttp v0.7.2
+github.com/hashicorp/go-retryablehttp
+# github.com/pmezard/go-difflib v1.0.0
+github.com/pmezard/go-difflib/difflib
+# github.com/r3labs/diff v0.0.0-20191120142937-b4ed99a31f5a
+github.com/r3labs/diff
+# github.com/sirupsen/logrus v1.9.0
+github.com/sirupsen/logrus
+# github.com/stretchr/testify v1.8.0
+github.com/stretchr/testify/assert
+# golang.org/x/sys v0.0.0-20220715151400-c0bba94af5f8
+golang.org/x/sys/internal/unsafeheader
+golang.org/x/sys/unix
+golang.org/x/sys/windows
+# gopkg.in/yaml.v3 v3.0.1
+gopkg.in/yaml.v3
